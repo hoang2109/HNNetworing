@@ -10,6 +10,31 @@
 		CE20DC4D26F9CB0C00359D24 /* HNNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE20DC4326F9CB0C00359D24 /* HNNetworking.framework */; };
 		CE20DC5226F9CB0C00359D24 /* HNNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC5126F9CB0C00359D24 /* HNNetworkingTests.swift */; };
 		CE20DC5426F9CB0D00359D24 /* HNNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CE20DC4626F9CB0C00359D24 /* HNNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE20DC5E26F9D44100359D24 /* HTTPMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC5D26F9D44100359D24 /* HTTPMethodType.swift */; };
+		CE20DC6026F9D49F00359D24 /* BodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC5F26F9D49F00359D24 /* BodyEncoding.swift */; };
+		CE20DC6226F9D4DD00359D24 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6126F9D4DD00359D24 /* Requestable.swift */; };
+		CE20DC6426F9D4F800359D24 /* NetworkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6326F9D4F800359D24 /* NetworkConfigurable.swift */; };
+		CE20DC6626F9D54D00359D24 /* ResponseRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6526F9D54D00359D24 /* ResponseRequestable.swift */; };
+		CE20DC6826F9D5D600359D24 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6726F9D5D600359D24 /* EndPoint.swift */; };
+		CE20DC6A26F9D60300359D24 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6926F9D60300359D24 /* ResponseDecoder.swift */; };
+		CE20DC6C26F9D62500359D24 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6B26F9D62500359D24 /* DataTransferService.swift */; };
+		CE20DC6E26F9D64E00359D24 /* JSONResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6D26F9D64E00359D24 /* JSONResponseDecoder.swift */; };
+		CE20DC7026F9D66E00359D24 /* RawDataResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC6F26F9D66E00359D24 /* RawDataResponseDecoder.swift */; };
+		CE20DC7226F9D70300359D24 /* APINetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7126F9D70300359D24 /* APINetworkConfig.swift */; };
+		CE20DC7426F9D78200359D24 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7326F9D78200359D24 /* NetworkError.swift */; };
+		CE20DC7626F9D79500359D24 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7526F9D79500359D24 /* Cancellable.swift */; };
+		CE20DC7826F9D7B300359D24 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7726F9D7B300359D24 /* DataTransferError.swift */; };
+		CE20DC7A26F9D7F400359D24 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7926F9D7F400359D24 /* HTTPClient.swift */; };
+		CE20DC7C26F9D80800359D24 /* NetworkErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7B26F9D80800359D24 /* NetworkErrorLogger.swift */; };
+		CE20DC7E26F9D82000359D24 /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7D26F9D82000359D24 /* DefaultNetworkService.swift */; };
+		CE20DC8026F9D84300359D24 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC7F26F9D84300359D24 /* URLSessionHTTPClient.swift */; };
+		CE20DC8226F9D87500359D24 /* DefaultNetworkErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8126F9D87500359D24 /* DefaultNetworkErrorLogger.swift */; };
+		CE20DC8426F9D91C00359D24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8326F9D91C00359D24 /* NetworkService.swift */; };
+		CE20DC8626F9D95700359D24 /* DataTransferErrorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8526F9D95700359D24 /* DataTransferErrorResolver.swift */; };
+		CE20DC8826F9D98500359D24 /* DataTransferErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8726F9D98500359D24 /* DataTransferErrorLogger.swift */; };
+		CE20DC8A26F9D99D00359D24 /* DefaultDataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8926F9D99D00359D24 /* DefaultDataTransferService.swift */; };
+		CE20DC8C26F9D9BD00359D24 /* DefaultDataTransferErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8B26F9D9BD00359D24 /* DefaultDataTransferErrorLogger.swift */; };
+		CE20DC8E26F9D9CC00359D24 /* DefaultDataTransferErrorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20DC8D26F9D9CC00359D24 /* DefaultDataTransferErrorResolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +54,31 @@
 		CE20DC4C26F9CB0C00359D24 /* HNNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HNNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE20DC5126F9CB0C00359D24 /* HNNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNNetworkingTests.swift; sourceTree = "<group>"; };
 		CE20DC5326F9CB0C00359D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE20DC5D26F9D44100359D24 /* HTTPMethodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodType.swift; sourceTree = "<group>"; };
+		CE20DC5F26F9D49F00359D24 /* BodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyEncoding.swift; sourceTree = "<group>"; };
+		CE20DC6126F9D4DD00359D24 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		CE20DC6326F9D4F800359D24 /* NetworkConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurable.swift; sourceTree = "<group>"; };
+		CE20DC6526F9D54D00359D24 /* ResponseRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseRequestable.swift; sourceTree = "<group>"; };
+		CE20DC6726F9D5D600359D24 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		CE20DC6926F9D60300359D24 /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		CE20DC6B26F9D62500359D24 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		CE20DC6D26F9D64E00359D24 /* JSONResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponseDecoder.swift; sourceTree = "<group>"; };
+		CE20DC6F26F9D66E00359D24 /* RawDataResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataResponseDecoder.swift; sourceTree = "<group>"; };
+		CE20DC7126F9D70300359D24 /* APINetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkConfig.swift; sourceTree = "<group>"; };
+		CE20DC7326F9D78200359D24 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CE20DC7526F9D79500359D24 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		CE20DC7726F9D7B300359D24 /* DataTransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
+		CE20DC7926F9D7F400359D24 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CE20DC7B26F9D80800359D24 /* NetworkErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorLogger.swift; sourceTree = "<group>"; };
+		CE20DC7D26F9D82000359D24 /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
+		CE20DC7F26F9D84300359D24 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		CE20DC8126F9D87500359D24 /* DefaultNetworkErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkErrorLogger.swift; sourceTree = "<group>"; };
+		CE20DC8326F9D91C00359D24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE20DC8526F9D95700359D24 /* DataTransferErrorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferErrorResolver.swift; sourceTree = "<group>"; };
+		CE20DC8726F9D98500359D24 /* DataTransferErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferErrorLogger.swift; sourceTree = "<group>"; };
+		CE20DC8926F9D99D00359D24 /* DefaultDataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferService.swift; sourceTree = "<group>"; };
+		CE20DC8B26F9D9BD00359D24 /* DefaultDataTransferErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferErrorLogger.swift; sourceTree = "<group>"; };
+		CE20DC8D26F9D9CC00359D24 /* DefaultDataTransferErrorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferErrorResolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +123,9 @@
 			children = (
 				CE20DC4626F9CB0C00359D24 /* HNNetworking.h */,
 				CE20DC4726F9CB0C00359D24 /* Info.plist */,
+				CE20DC9326F9E33200359D24 /* DataTransferService */,
+				CE20DC9126F9E1F200359D24 /* Config */,
+				CE20DC9226F9E28800359D24 /* NetworkService */,
 			);
 			path = HNNetworking;
 			sourceTree = "<group>";
@@ -84,6 +137,60 @@
 				CE20DC5326F9CB0C00359D24 /* Info.plist */,
 			);
 			path = HNNetworkingTests;
+			sourceTree = "<group>";
+		};
+		CE20DC8F26F9D9F100359D24 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				CE20DC6D26F9D64E00359D24 /* JSONResponseDecoder.swift */,
+				CE20DC6F26F9D66E00359D24 /* RawDataResponseDecoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		CE20DC9126F9E1F200359D24 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CE20DC6326F9D4F800359D24 /* NetworkConfigurable.swift */,
+				CE20DC7126F9D70300359D24 /* APINetworkConfig.swift */,
+				CE20DC5D26F9D44100359D24 /* HTTPMethodType.swift */,
+				CE20DC5F26F9D49F00359D24 /* BodyEncoding.swift */,
+				CE20DC6126F9D4DD00359D24 /* Requestable.swift */,
+				CE20DC6526F9D54D00359D24 /* ResponseRequestable.swift */,
+				CE20DC6726F9D5D600359D24 /* EndPoint.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CE20DC9226F9E28800359D24 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CE20DC7326F9D78200359D24 /* NetworkError.swift */,
+				CE20DC7526F9D79500359D24 /* Cancellable.swift */,
+				CE20DC8326F9D91C00359D24 /* NetworkService.swift */,
+				CE20DC7D26F9D82000359D24 /* DefaultNetworkService.swift */,
+				CE20DC7926F9D7F400359D24 /* HTTPClient.swift */,
+				CE20DC7F26F9D84300359D24 /* URLSessionHTTPClient.swift */,
+				CE20DC7B26F9D80800359D24 /* NetworkErrorLogger.swift */,
+				CE20DC8126F9D87500359D24 /* DefaultNetworkErrorLogger.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CE20DC9326F9E33200359D24 /* DataTransferService */ = {
+			isa = PBXGroup;
+			children = (
+				CE20DC8F26F9D9F100359D24 /* Decoder */,
+				CE20DC6926F9D60300359D24 /* ResponseDecoder.swift */,
+				CE20DC7726F9D7B300359D24 /* DataTransferError.swift */,
+				CE20DC6B26F9D62500359D24 /* DataTransferService.swift */,
+				CE20DC8926F9D99D00359D24 /* DefaultDataTransferService.swift */,
+				CE20DC8526F9D95700359D24 /* DataTransferErrorResolver.swift */,
+				CE20DC8D26F9D9CC00359D24 /* DefaultDataTransferErrorResolver.swift */,
+				CE20DC8726F9D98500359D24 /* DataTransferErrorLogger.swift */,
+				CE20DC8B26F9D9BD00359D24 /* DefaultDataTransferErrorLogger.swift */,
+			);
+			path = DataTransferService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +254,7 @@
 				TargetAttributes = {
 					CE20DC4226F9CB0C00359D24 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					CE20DC4B26F9CB0C00359D24 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +302,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE20DC6A26F9D60300359D24 /* ResponseDecoder.swift in Sources */,
+				CE20DC6826F9D5D600359D24 /* EndPoint.swift in Sources */,
+				CE20DC7626F9D79500359D24 /* Cancellable.swift in Sources */,
+				CE20DC6E26F9D64E00359D24 /* JSONResponseDecoder.swift in Sources */,
+				CE20DC8E26F9D9CC00359D24 /* DefaultDataTransferErrorResolver.swift in Sources */,
+				CE20DC6226F9D4DD00359D24 /* Requestable.swift in Sources */,
+				CE20DC8C26F9D9BD00359D24 /* DefaultDataTransferErrorLogger.swift in Sources */,
+				CE20DC7026F9D66E00359D24 /* RawDataResponseDecoder.swift in Sources */,
+				CE20DC7226F9D70300359D24 /* APINetworkConfig.swift in Sources */,
+				CE20DC7C26F9D80800359D24 /* NetworkErrorLogger.swift in Sources */,
+				CE20DC6026F9D49F00359D24 /* BodyEncoding.swift in Sources */,
+				CE20DC6C26F9D62500359D24 /* DataTransferService.swift in Sources */,
+				CE20DC8426F9D91C00359D24 /* NetworkService.swift in Sources */,
+				CE20DC7826F9D7B300359D24 /* DataTransferError.swift in Sources */,
+				CE20DC8026F9D84300359D24 /* URLSessionHTTPClient.swift in Sources */,
+				CE20DC8826F9D98500359D24 /* DataTransferErrorLogger.swift in Sources */,
+				CE20DC7E26F9D82000359D24 /* DefaultNetworkService.swift in Sources */,
+				CE20DC8226F9D87500359D24 /* DefaultNetworkErrorLogger.swift in Sources */,
+				CE20DC6626F9D54D00359D24 /* ResponseRequestable.swift in Sources */,
+				CE20DC8626F9D95700359D24 /* DataTransferErrorResolver.swift in Sources */,
+				CE20DC8A26F9D99D00359D24 /* DefaultDataTransferService.swift in Sources */,
+				CE20DC7426F9D78200359D24 /* NetworkError.swift in Sources */,
+				CE20DC7A26F9D7F400359D24 /* HTTPClient.swift in Sources */,
+				CE20DC5E26F9D44100359D24 /* HTTPMethodType.swift in Sources */,
+				CE20DC6426F9D4F800359D24 /* NetworkConfigurable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +474,7 @@
 		CE20DC5826F9CB0D00359D24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoangnn.HNNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +499,7 @@
 		CE20DC5926F9CB0D00359D24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +523,7 @@
 		CE20DC5B26F9CB0D00359D24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HNNetworkingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +541,7 @@
 		CE20DC5C26F9CB0D00359D24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HNNetworkingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

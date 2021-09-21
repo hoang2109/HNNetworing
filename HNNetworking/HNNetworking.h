@@ -1,9 +1,3 @@
-//
-//  HNNetworking.h
-//  HNNetworking
-//
-//  Created by Hoang Nguyen on 21/9/21.
-//
 
 #import <Foundation/Foundation.h>
 
